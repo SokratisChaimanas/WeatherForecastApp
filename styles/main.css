@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #2c3e50; 
+    color: #ecf0f1; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+}
+
+.search-container {
+    display: flex;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.search-bar {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px 0 0 5px;
+    background-color: #34495e; 
+    color: #ecf0f1;
+    transition: border-color 0.3s;
+}
+
+.search-bar::placeholder {
+    color: #bdc3c7; 
+}
+
+.search-bar:focus {
+    border-color: #1abc9c; 
+}
+
+.submit-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    background-color: #1abc9c;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #16a085; 
+}
+
+.weather-info {
+    text-align: center;
+    background-color: #1a1569;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    margin: 20px 0;
+}
+
+.location,
+.current-weather {
+    margin-bottom: 20px;
+}
+
+.daily-predictions {
+    display: flex;
+    justify-content: space-around; /* Space out the items evenly */
+    flex-wrap: nowrap; /* Prevent wrapping to the next line */
+    width: 100%; /* Ensure the container takes up full width */
+    margin-top: 20px; /* Add some space above the daily predictions */
+}
+
+.forecast-item {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    background-color: #1a1569;
+    width: 80px;
+    transition: transform 0.3s;
+}
+
+.forecast-item:hover {
+    transform: scale(1.05);
+}
+
+.forecast-item .day {
+    font-weight: bold;
+    color: #1e90ff;
+}
+
+.forecast-item .temp {
+    color: #ff8c00;
+}
+
+.weather-icon {
+    width: 50px;
+    height: 50px;
+}
+
+.error-message {
+    background-color: #e74c3c;
+    color: #ffffff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin: 10px 0;
+    text-align: center;
+    width: 100%;
+}
+
+.hidden {
+    display: none;
+}
+
+.waiting-gif {
+    width: 50px;
+    height: 50px;
+    margin: 20px 0;
+}

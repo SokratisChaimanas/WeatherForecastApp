@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="module" src="./js/script.js"></script>
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+    <div class="container">
+        <div class="search-container">
+            <input type="text" id="cityInput" placeholder="Enter city" class="search-bar">
+            <button id="submitBtn" class="submit-button">Search</button>
+        </div>
+        
+        <div>
+            <img id="waiting" class="waiting-gif hidden" src="./img/waiting.gif" alt="Loading...">
+        </div>
+        
+        <div class="weather-info hidden" id="weatherInfo">
+            
+        </div>
+
+        <div class="daily-predictions hidden" id="dailyPredictions">        
+
+        </div>
+
+        <div id="cityNameError" class="error-message hidden">404: City not found. Please try again.</div>
+        <div id="apiError" class="error-message hidden">Oops! Something went wrong. Please try again later.</div>
+        <div id="statusCodeError" class="error-message hidden"></div>
+    </div>
+</body>
+</html>
