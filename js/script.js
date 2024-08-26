@@ -12,7 +12,7 @@ $(function() {
     })
 })
 
-const apiKey = '0d6559f2788e278b23fd01af785000b2'
+const apiKey = ''
 /**
  * Fetches coordinates for the given city and initiates forecast retrieval.
  * @param {string} city - Name of the city.
