@@ -30,8 +30,8 @@ To run this project locally, you need a basic understanding of HTML, CSS, and Ja
 
 1. **Clone the repository**:
     ```bash
-    git clone https://github.com/yourusername/simple-weather-app.git
-    cd simple-weather-app
+    git clone https://github.com/SokratisChaimanas/WeatherForecastApp.git
+    cd WeatherForecastApp
     ```
 
 2. **Configure API Key**:
